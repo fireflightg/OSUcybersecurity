@@ -1,0 +1,89 @@
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header Styles */
+#header {
+  background: #333;
+  color: #fff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #bbb 3px solid;
+}
+
+#header a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+/* Main content area */
+#maincontent {
+  float: left;
+  width: 70%;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+/* Sidebar */
+#sidebar {
+  float: right;
+  width: 30%;
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Blog post styles */
+#blog_subject {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#blog_date {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Footer Styles */
+#footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Link Styles */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #maincontent,
+  #sidebar {
+    width: 100%;
+    float: none;
+  }
+}
