@@ -1,0 +1,18 @@
+services:
+
+  nginx:
+    container_name: nginx
+    image: nginx
+    ports: 
+      - 80:80
+    volumes:
+      - ./blogphpvun:/var/www/html
+      - ./nginx-conf:/etc/nginx/conf.d
+    depends_on:
+      - php
+
+  php:
+    container_name: php
+    image: php:fpm-alpine
+    volumes:
+      - ./blogphpvun:/var/www/html
